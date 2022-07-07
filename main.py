@@ -92,6 +92,14 @@ x = bytearray(5)	#bytearray
 x = memoryview(bytes(5))	#memoryview	
 x = None	#NoneType
 
+#Random Numbers
+print(random.randrange(1, 10))
+
+#Casting
+x = float(1)     # x will be 1.0
+y = float(2.8)   # y will be 2.8
+z = float("3")   # z will be 3.0
+w = float("4.2") # w will be 4.2
 
 
 
