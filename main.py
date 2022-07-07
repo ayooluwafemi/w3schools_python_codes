@@ -531,6 +531,159 @@ y = {"google", "microsoft", "apple"}
 z = x.symmetric_difference(y)
 print(z)
 
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+print(thisdict)
+print(thisdict["brand"])
+
+# Duplicate values will overwrite existing values:
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964,
+  "year": 2020
+}
+print(thisdict)
+
+thisdict =	{
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+x = thisdict.get("model")
+print(x)
+
+# The values in dictionary items can be of any data type:
+thisdict = {
+  "brand": "Ford",
+  "electric": False,
+  "year": 1964,
+  "colors": ["red", "white", "blue"]
+}
+
+# Add a new key to the original dictionary
+car = {
+"brand": "Ford",
+"model": "Mustang",
+"year": 1964
+}
+x = car.keys()
+print(x) #before the change
+car["color"] = "white"
+print(x) #after the change
+
+# Add a new values to the original dictionary
+car = {
+"brand": "Ford",
+"model": "Mustang",
+"year": 1964
+}
+x = car.values()
+print(x) #before the change
+car["year"] = 2020
+print(x) #after the change
+
+# Add a new key & values to the original dictionary
+car = {
+"brand": "Ford",
+"model": "Mustang",
+"year": 1964
+}
+x = car.values()
+print(x) #before the change
+car["color"] = "red"
+print(x) #after the change
+
+car = {
+"brand": "Ford",
+"model": "Mustang",
+"year": 1964
+}
+x = car.items()
+print(x) #before the change
+car["year"] = 2020
+print(x) #after the change
+
+car = {
+"brand": "Ford",
+"model": "Mustang",
+"year": 1964
+}
+x = car.items()
+print(x) #before the change
+car["color"] = "red"
+print(x) #after the change
+
+if "model" in thisdict:
+  print("Yes, 'model' is one of the keys in the thisdict dictionary")
+
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+# thisdict.update({"year": 2020})
+# thisdict.pop("model")
+# thisdict.popitem()
+# thisdict.clear()
+
+for x in thisdict:
+  print(x)
+for x in thisdict:
+  print(thisdict[x])
+for x in thisdict.values():
+  print(x)
+for x in thisdict.keys():
+  print(x)
+for x, y in thisdict.items():
+  print(x, y)
+
+mydict = thisdict.copy()
+print(mydict)
+mydict = dict(thisdict)
+print(mydict)
+
+# Nested Dictionaries: A dictionary can contain dictionaries, this is called nested dictionaries.
+myfamily = {
+  "child1" : {
+    "name" : "Emil",
+    "year" : 2004
+  },
+  "child2" : {
+    "name" : "Tobias",
+    "year" : 2007
+  },
+  "child3" : {
+    "name" : "Linus",
+    "year" : 2011
+  }
+}
+
+print(myfamily)
+
+#----------------------
+child1 = {
+  "name" : "Emil",
+  "year" : 2004
+}
+child2 = {
+  "name" : "Tobias",
+  "year" : 2007
+}
+child3 = {
+  "name" : "Linus",
+  "year" : 2011
+}
+
+myfamily = {
+  "child1" : child1,
+  "child2" : child2,
+  "child3" : child3
+}
+
 
 
 
