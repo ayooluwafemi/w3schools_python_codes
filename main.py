@@ -926,5 +926,11 @@ myiter = iter(myclass)
 for x in myiter:
   print(x)
 
+# Python Iterators: An iterator is an object that contains a countable number of values.
+mytuple = ("apple", "banana", "cherry")
+myit = iter(mytuple)
+print(next(myit))
+print(next(myit))
+print(next(myit))
 
 
