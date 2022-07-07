@@ -946,5 +946,16 @@ def myfunc():
 myfunc()
 print(x)
 
+# Module: Consider a module to be the same as a code library.
+mymodule.greeting("Jonathan")
 
+a = mymodule.person1["age"]
+print(a)
+
+# Built-in Modules
+x = platform.system()
+print(x)
+
+x = dir(platform)
+print(x)
 
