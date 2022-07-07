@@ -10,3 +10,7 @@ import os
 
 # Rendering to Output
 print("Hello, World!") #This is a comment
+
+# Python Indentation
+if 5 > 2:
+    print("Five is greater than two!")
