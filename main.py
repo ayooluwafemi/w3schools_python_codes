@@ -171,6 +171,48 @@ print(myorder.format(quantity, itemno, price))
 # Escape Characters
 txt = "We are the so-called \"Vikings\" from the north."
 
+# Boolean Values
+print(10 > 9)
+print(10 == 9)
+print(10 < 9)
+
+a = 200
+b = 33
+
+if b > a:
+  print("b is greater than a")
+else:
+  print("b is not greater than a")
+  
+print(bool("Hello"))
+print(bool(15)) # Test result if its correct
+
+bool("abc")
+bool(123)
+bool(["apple", "cherry", "banana"])
+
+bool(False)
+bool(None)
+bool(0)
+bool("")
+bool(())
+bool([])
+bool({})
+
+def myFunction() :
+  return True
+print(myFunction())
+
+def myFunction() :
+  return True
+if myFunction():
+  print("YES!")
+else:
+  print("NO!")
+
+x = 200
+print(isinstance(x, int))
+
 
 
 
