@@ -756,6 +756,28 @@ while i < 6:
 else:
   print("i is no longer less than 6")
 
+# For loop and Condition
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+  print(x)
+  if x == "banana":
+    break
+
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+  if x == "banana":
+    break
+  print(x)
+
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+  if x == "banana":
+    continue
+  print(x)
+
+#Increment the sequence with 3 (default is 1):
+for x in range(2, 30, 3):
+  print(x)
 
 
 
