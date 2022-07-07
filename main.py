@@ -779,7 +779,12 @@ for x in fruits:
 for x in range(2, 30, 3):
   print(x)
 
-
+# Print all numbers from 0 to 5, and print a message when the loop has ended:
+for x in range(6):
+  print(x)
+else:
+  print("Finally finished!")
+  
 
 
 
