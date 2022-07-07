@@ -1039,4 +1039,18 @@ try:
 except:
   print("An exception occurred")
   
+# Open a File on the Server
+f = open("mymodule.py", "r")
+print(f.read())
+print(f.read(5))
+print(f.readline())
 
+for x in f:
+  print(x)
+f.close()
+
+# Delect File
+if os.path.exists("demofile.txt"):
+  os.remove("demofile.txt")
+else:
+  print("The file does not exist")
