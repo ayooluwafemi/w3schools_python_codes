@@ -1033,3 +1033,10 @@ print(x)
 x = re.sub("\s", "9", txt)
 print(x)
 
+# Exceptions can be handled using the try statement
+try:
+  print(x)
+except:
+  print("An exception occurred")
+  
+
