@@ -453,6 +453,84 @@ fruits = ("apple", "banana", "cherry")
 mytuple = fruits * 2
 print(mytuple)
 
+# Set: Duplicate values will be ignored:
+thisset = {"apple", "banana", "cherry", "apple"}
+print(thisset)
+
+thisset = {"apple", "banana", "cherry"}
+for x in thisset:
+  print(x)
+
+thisset = {"apple", "banana", "cherry"}
+print("banana" in thisset)
+
+thisset = {"apple", "banana", "cherry"}
+thisset.add("orange")
+print(thisset)
+
+thisset = {"apple", "banana", "cherry"}
+tropical = {"pineapple", "mango", "papaya"}
+thisset.update(tropical)
+print(thisset)
+
+# Remove "banana" by using the remove() method:
+thisset = {"apple", "banana", "cherry"}
+thisset.remove("banana")
+print(thisset)
+
+#Remove "banana" by using the discard() method:
+thisset = {"apple", "banana", "cherry"}
+thisset.discard("banana")
+print(thisset)
+
+# Remove the last item by using the pop() method:
+thisset = {"apple", "banana", "cherry"}
+x = thisset.pop()
+print(x)
+print(thisset)
+
+# The clear() method empties the set:
+thisset = {"apple", "banana", "cherry"}
+thisset.clear()
+print(thisset)
+
+# The del keyword will delete the set completely:
+thisset = {"apple", "banana", "cherry"}
+del thisset
+
+# Join Two Sets: Both union() and update() will exclude any duplicate items.
+set1 = {"a", "b" , "c"}
+set2 = {1, 2, 3}
+set3 = set1.union(set2)
+print(set3)
+
+set1 = {"a", "b" , "c"}
+set2 = {1, 2, 3}
+set1.update(set2)
+print(set1)
+
+# Keep ONLY the Duplicates: Return a set that contains the items that exist in both set x, and set y:
+x = {"apple", "banana", "cherry"}
+y = {"google", "microsoft", "apple"}
+x.intersection_update(y)
+print(x)
+
+x = {"apple", "banana", "cherry"}
+y = {"google", "microsoft", "apple"}
+z = x.intersection(y)
+print(z)
+
+# Keep All, But NOT the Duplicates
+x = {"apple", "banana", "cherry"}
+y = {"google", "microsoft", "apple"}
+x.symmetric_difference_update(y)
+print(x)
+
+x = {"apple", "banana", "cherry"}
+y = {"google", "microsoft", "apple"}
+z = x.symmetric_difference(y)
+print(z)
+
 
 
 
