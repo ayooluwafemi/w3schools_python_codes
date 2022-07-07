@@ -967,7 +967,7 @@ print(x.strftime("%A"))
 print(x.strftime("%B"))
 print(x.strftime("%d"))
 
- Math Functions
+# Math Functions
 x = min(5, 10, 25)
 y = max(5, 10, 25) # can be used to find the lowest or highest value in an iterabl
 x = abs(-7.25) # returns the absolute (positive) value of the specified number
@@ -979,3 +979,38 @@ x = math.pi
 
 print(x)
 print(y)
+
+
+# Python JSON
+# JSON is a syntax for storing and exchanging data.
+# JSON is text, written with JavaScript object notation.
+# Convert from JSON to Python
+x =  '{ "name":"John", "age":30, "city":"New York"}'
+y = json.loads(x)
+print(y["age"])
+
+# Python to JSON
+y = json.dumps(x)
+print(y)
+
+x = {
+  "name": "John",
+  "age": 30,
+  "married": True,
+  "divorced": False,
+  "children": ("Ann","Billy"),
+  "pets": None,
+  "cars": [
+    {"model": "BMW 230", "mpg": 27.5},
+    {"model": "Ford Edge", "mpg": 24.1}
+  ]
+}
+print(json.dumps(x))
+
+# Formatting JSON
+print(json.dumps(x, indent=4))
+print(json.dumps(x, indent=4, separators=(". ", " = ")))
+# Order the Result
+print(json.dumps(x, indent=4, sort_keys=True))
+
+
