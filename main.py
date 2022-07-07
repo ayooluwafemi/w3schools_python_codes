@@ -101,6 +101,76 @@ y = float(2.8)   # y will be 2.8
 z = float("3")   # z will be 3.0
 w = float("4.2") # w will be 4.2
 
+#Strings
+a = '''Lorem ipsum dolor sit amet,
+consectetur adipiscing elit,
+sed do eiusmod tempor incididunt
+ut labore et dolore magna aliqua.'''
+print(a)
+
+#Strings as Array
+a = "Hello, World!"
+print(a[1])
+
+#Loop over string
+for x in "banana":
+  print(x)
+  
+a = "Hello, World!"
+print(len(a))
+
+txt = "The best things in life are free!"
+print("free" in txt)
+
+# If statement on string
+txt = "The best things in life are free!"
+if "free" in txt:
+  print("Yes, 'free' is present.")
+
+txt = "The best things in life are free!"
+print("expensive" not in txt)
+
+# Slicing String
+a = "Hello, World!"
+b = "Hello, World!"
+print(b[2:5])
+print(b[:5])
+print(b[2:])
+print(b[-5:-2])
+
+# Modify Strings
+print(a.upper())
+print(a.lower())
+print(a.strip()) # returns "Hello, World!"
+print(a.replace("H", "J"))
+print(a.split(",")) # returns ['Hello', ' World!']
+
+# String Concatenation
+a = "Hello"
+b = "World"
+c = a + b
+print(c)
+
+c = a + " " + b
+print(c)
+
+# Format - Strings
+age = 36
+txt = "My name is John, and I am {}"
+print(txt.format(age))
+
+quantity = 3
+itemno = 567
+price = 49.95
+myorder = "I want {} pieces of item {} for {} dollars."
+print(myorder.format(quantity, itemno, price))
+
+myorder = "I want to pay {2} dollars for {0} pieces of item {1}."
+print(myorder.format(quantity, itemno, price))
+
+# Escape Characters
+txt = "We are the so-called \"Vikings\" from the north."
+
 
 
 
