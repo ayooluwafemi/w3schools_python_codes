@@ -1013,4 +1013,23 @@ print(json.dumps(x, indent=4, separators=(". ", " = ")))
 # Order the Result
 print(json.dumps(x, indent=4, sort_keys=True))
 
+# Python RegEx: Regular Expression, is a sequence of characters that forms a search pattern
+txt = "The rain in Spain"
+x = re.search("^The.*Spain$", txt)
+if x:
+  print("YES! We have a match!")
+else:
+  print("No match")
+  
+x = re.search("\s", txt)
+print("The first white-space character is located in position:", x.start()) 
+
+x = re.split("\s", txt)
+print(x)
+# control the number of occurrences by specifying the maxsplit parameter
+x = re.split("\s", txt, 1)
+print(x)
+# replaces the matches with the text of your choice
+x = re.sub("\s", "9", txt)
+print(x)
 
